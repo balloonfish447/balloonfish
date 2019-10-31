@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+    <!DOCTYPE mapper   
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zydsj.shiro.demoshiro.mapper.UserMapper">
+
+	<resultMap id="BaseResultMap" type="com.zydsj.shiro.demoshiro.po.User">
+		<id column="id" property="id" />
+		<result property="userName" column="userName" />
+		<result property="passWord" column="passWord" />
+		<result property="salt" column="salt" />
+		<result property="role_id" column="role_id" />
+	</resultMap>
+
+	<sql id="BaseColumnList">
+	    <![CDATA[
+			id,
+			userName,
+			passWord,
+			salt,
+			role_id
+	    ]]>
+	</sql>
+
+	<sql id="listWhere">
+		<if test="id != null ">
+			and id = #{id}
+		</if>
+		<if test="userName != null and userName != ''">
+			and userName = #{userName}
+		</if>
+		<if test="passWord != null and passWord != ''">
+			and passWord = #{passWord}
+		</if>
+		<if test="salt != salt ">
+			and add_date = #{addDate}
+		</if>
+		<if test="role_id != null and role_id != ''">
+			and flag = #{flag}
+		</if>
+	</sql>
+
+	<insert id="save" useGeneratedKeys="true" keyProperty="id">
+		insert into
+		user
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="userName != null">
+				userName ,
+			</if>
+			<if test="passWord != null">
+				passWord ,
+			</if>
+			<if test="salt != null">
+				salt ,
+			</if>
+			<if test="role_id != null">
+				role_id ,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+
+			<if test="userName != null">
+				#{userName} ,
+			</if>
+			<if test="passWord != null">
+				#{passWord} ,
+			</if>
+			<if test="salt != null">
+				#{salt} ,
+			</if>
+			<if test="role_id != null">
+				#{role_id} ,
+			</if>
+		</trim>
+	</insert>
+
+
+	<select id="select" resultMap="BaseResultMap">
+		select
+		<include refid="BaseColumnList"></include>
+		from
+		user
+		<where>
+			<include refid="listWhere" />
+		</where>
+	</select>
+
+
+
+
+
+
+
+
+
+
+</mapper>
+
