@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/com/se/aspect/SystemLogAspect.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/controller/HtmlTemplate.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/se/controller/LinkController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/controller/LoginController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/controller/RegisterController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/controller/SysPowerController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/controller/SysResourceController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/controller/SysRoleController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/controller/SysUserController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/dao/SysPowerDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/dao/SysResourceDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/dao/SysRoleDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/dao/SysUserDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/se/dao/impl/LoginDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/dao/impl/RegisterDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/dao/impl/SysResourceDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/se/dao/impl/SysUserDaoImpl.java" charset="UTF-8" />
+  </component>
+</project>
